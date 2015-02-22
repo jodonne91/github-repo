@@ -5,13 +5,128 @@
     <script src="libs/underscore.js"></script>    <!-- reference to underscore -->
     <script src="libs/jquery.js"></script>      <!-- reference to jQuery -->
     <script src="index.js"></script>            <!-- reference to js script -->
-    <script src="test/test.index.js"></script>    <!-- reference to test index (if necessary)-->
     <link href="index.css" rel="stylesheet" />    <!-- reference to css stylesheet -->
-
+    <script src="libs/handlebars.js"></script>
+    
   </head>
 
   
   <body>
+    <header class = 'header'>
+
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/orgs/TIY-DC-FEE-Jan-2015/dashboard" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+      <div class = 'githubIMG'>
+        <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/>
+      </div>
+      <div class="search">
+        <input type = "text" class = "search_bar">
+
+      </div>
+      <div class="links">
+
+      </div>
+      <div class ="right_links">
+
+      </div>
+
+    </header>
+
+    <div class="main">
+
+      <div class = "left_column">
+
+        <div class = "avatar">
+
+        </div>
+        <h2>
+        </h2>
+        <hr>
+
+        <div class="followers">
+        
+        </div>
+
+        <div class="organizations">
+
+        </div>
+
+      </div>
+
+      <div class = "center_column">
+
+
+
+        <div class = "repo_column">
+
+          <ul class = "repos">
+
+
+
+        <script type="x-handlebars-template" id="repos">
+          <li class="repo-list-item">
+            <div class="repo-list-stats">
+              {{RepoStats}}
+            <a class="stargazers" href="{{Stargazersurl}}" aria-label="Stargazers">
+              <span class="octicon octicon-star"></span>
+                {{StargazersCount}}
+            </a>
+            <a class="forks" href="{{Forksurl}}"  aria-label="Forks">
+              <span class="octicon octicon-git-branch"></span>
+                {{ForksCount}}
+            </a>
+            </div>
+
+            <h3 class="repo-list-name">
+              <a href="{{Repourl}}">
+                {{RepoName}}
+              </a>
+            </h3>
+
+            <p class="repo-list-info">
+              <span class="octicon octicon-repo-forked"></span>
+              forked from <a href="/{{Originurl}}">
+              {{RepoOrigin}}
+              </a>
+            </p>
+
+            <p class="repo-list-description">
+              {{RepoDescription}}
+            </p>
+
+            <p class="repo-list-update">
+                Updated <time datetime="2015-02-05T19:24:49Z" is="relative-time">Feb 5, 2015</time>
+            </p>
+          </li>
+        </script>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+
+
+    </footer>
+
   </body>
 
 </html>

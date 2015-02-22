@@ -1,0 +1,123 @@
+*
+{
+	box-sizing: border-box;
+
+}
+
+header {
+	display: block;
+
+}
+
+body {
+	min-width: 1020px;
+	font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+	color: #333;
+	background-color: #fff;
+}
+
+div
+{
+	display: block;
+}
+
+ul
+{
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+li
+{
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.repo_column
+{
+	position: relative;
+}
+
+.repoi-list-stats{
+	position: relative;
+}
+
+.repo-list-item
+{
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+}
+
+.repoi-list-stats
+{
+	margin-top: 6px;
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	color: #888;
+}
+
+.stargazers
+{
+	margin-left: 8px;
+	display: inline-block;
+	color: #888;
+	text-decoration: none;
+}
+
+.forks
+{
+	margin-left: 8px;
+	display: inline-block;
+	color: #888;
+	text-decoration: none;
+}
+
+.repo-list-name
+{
+	margin: 0 0 8px;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.repo-list-info
+{
+	display: inline-block;
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #888;
+	vertical-align: middle;
+}
+
+.repo-list-description
+{
+	max-width: 550px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+.repo-list-update
+{
+	display:block;
+	margin-top:8px;
+	margin-bottom:0;
+	font-size:13px;
+	color:#888;
+	text-decoration: none;
+}
