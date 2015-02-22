@@ -1,10 +1,12 @@
 *
 {
 	box-sizing: border-box;
-
 }
 
 header {
+	width: 100%;
+	float: left;
+	position: relative;
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -14,7 +16,10 @@ header {
 }
 
 body {
+	display: block;
+	position: relative;
 	min-width: 1020px;
+	width: 100%;
 	font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 	color: #333;
 	background-color: #fff;
@@ -77,10 +82,71 @@ li
 	text-align: start;
 }
 
+.hnav-left
+{
+	list-style: none;
+}
+
+.hnav-right
+{
+	float: right;
+	list-style: none;
+
+}
+
+.header-nav-link 
+{
+	display: block;
+	padding: 4px 8px;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #333;
+	text-decoration: none;
+}
+
+.header-nav-item
+{
+	float: left;
+	width: 50px;
+	height: 18px;
+	font-size: 18px;
+}
+
+.dropdown-menu-content
+{
+	display: none;
+}
+
+.dropdown-menu
+{
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 100;
+	width: 160px;
+	margin-top: 2px;
+	margin-left: -80px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.margin{
+	position: relative;
+
+}
+
 .left_column
 {
-	width: 25%;
+	display: inline-block;
 	float: left;
+	width: 25%;
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -91,12 +157,116 @@ li
 	display: block;
 }
 
+.vcard-stat
+{
+	float: left;
+	width: 33.333%;
+	font-size: 11px;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-align: center;
+}
+
+.vcard-stat-count
+{
+	display: block;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.undertext
+{
+	color: #999;
+}
+
+.center_column
+{
+	width: 70%;
+	position: relative;
+	display: inline-block;
+}
+
 .repo_column
 {
 	position: relative;
 }
 
-.repoi-list-stats{
+.tabnav
+{
+	border-bottom: 1px solid #ddd;
+}
+
+.tabnav-right
+{
+	position: relative;
+	float: right;
+}
+
+.tabnav-tabs
+{
+	display: inline-block;
+}
+
+.filter-bar
+{
+
+}
+
+.repo-search
+{
+	min-height: 34px;
+	padding: 7px 8px;
+	font-size: 13px;
+	color: #333;
+	vertical-align: middle;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	outline: none;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+}
+
+.button
+{
+	position: relative;
+	display: inline-block;
+	padding: 7px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+	background-image: linear-gradient(#fcfcfc, #eee);
+	background-repeat: repeat-x;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+	-webkit-user-select: none;
+}
+
+.repo-filters
+{
+	float: right;
+	margin-top: 8px;
+
+}
+
+.repo-filters li
+{
+	position: relative;
+	float: right;
+	list-style: none;
+	margin-left: 10px;
+	font-size: 14px
+}
+
+.repo-list-stats{
 	position: relative;
 }
 
@@ -109,7 +279,7 @@ li
 	border-bottom: 1px solid #eee;
 }
 
-.repoi-list-stats
+.repo-list-stats
 {
 	margin-top: 6px;
 	float: right;

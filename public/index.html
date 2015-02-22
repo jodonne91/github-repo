@@ -15,23 +15,23 @@
     <header>
 
       <div class="header">
-        <div class="container clearfix">
+        <div class="container">
 
       <a class="header-logo" href="https://github.com/">
         <span class="logo-github"></span>
       </a>
 
 
-      <div class="search  js-site-search" role="search">
+      <div class="search" role="search">
           <form action="/search" class="search-form">
             <input type="text" class="search-input" placeholder="Search GitHub">
           </form>
       </div>
-      <ul class="header-nav left">
-        <li class="header-nav-item explore">
+      <ul class="hnav-left">
+        <li class="header-nav-item">
           <a class="header-nav-link" href="/explore">Explore</a>
         </li>
-          <li class="header-nav-item">
+          <li class="header-nav-item" style = "margin-left: 20px">
             <a class="header-nav-link" href="https://gist.github.com">Gist</a>
           </li>
           <li class="header-nav-item">
@@ -43,34 +43,30 @@
       </ul>
 
     
-<ul class="header-nav user-nav right" id="user-links">
-  <li class="header-nav-item dropdown js-menu-container">
-    <a class="header-nav-link name" href="/jodonne91">
-      <img alt="John O'Donnell" class="avatar" src="https://avatars1.githubusercontent.com/u/10409303?v=3&amp;s=40" width="20">
-      <span class="css-truncate">
-        <span class="css-truncate-target">jodonne91</span>
-      </span>
+<ul class="hnav-right" id="user-links">
+  <li class="header-nav-item">
+    <a class="header-nav-link" href="/jodonne91">
+        <span>jodonne91</span>
     </a>
   </li>
 
-  <li class="header-nav-item dropdown js-menu-container">
-    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="#" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
-      <span class="octicon octicon-plus"></span>
-      <span class="dropdown-caret"></span>
+
+<!-- TOP RIGHT DROPDOWN MENU -->
+  <li class="dropdown">
+    <a class="dropdown-item">
     </a>
 
     <div class="dropdown-menu-content js-menu-content">
       
-<ul class="dropdown-menu">
-  <li>
-    <a href="/new" data-ga-click="Header, create new repository, icon:repo"><span class="octicon octicon-repo"></span> New repository</a>
-  </li>
-  <li>
-    <a href="/organizations/new" data-ga-click="Header, create new organization, icon:organization"><span class="octicon octicon-organization"></span> New organization</a>
-  </li>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/new"> New repository</a>
+        </li>
+        <li>
+          <a href="/organizations/new">New organization</a>
+        </li>
 
-
-</ul>
+      </ul>
 
     </div>
   </li>
@@ -79,7 +75,7 @@
         <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s">
         <span class="mail-status all-read"></span>
         <span class="octicon octicon-inbox"></span>
-</a>
+        </a>
   </li>
 
   <li class="header-nav-item">
@@ -93,26 +89,22 @@
       <div style="margin:0;padding:0;display:inline">
         <input name="utf8" type="hidden" value="✓">
         <input name="authenticity_token" type="hidden" value="vi/FDFiqLOuZvKeIMMLWdtm9IPtDAY19xPq/ozQZkJ6aH4CJexy0Pd5ZA7njgjzrdC2/PHhoyywuUXAe0UMqog=="></div>
-      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+      <button class="sign-out">
         <span class="octicon octicon-sign-out"></span>
       </button>
       </form>  
     </li>
 
 </ul>
-
-
-    
-  </div>
+</div>
 </div>
 
-
-    </header>
+</header>
 
     <div class="main">
 
       <div class = "left_column">
-        <a href="/account" class="avatar_link"><img alt="" class="avatar" data-user="10409303" height="230" src="https://avatars3.githubusercontent.com/u/10409303?v=3&amp;s=460" width="230"></a>
+        <a href="/account" class="avatar_link"></a>
 
       <h1 class="vcard-names">
   <span class="vcard-fullname" itemprop="name">John O'Donnell</span>
@@ -136,15 +128,15 @@
       <div class="vcard-stats">
         <a class="vcard-stat" href="/jodonne91/followers">
           <strong class="vcard-stat-count">0</strong>
-          <span class="text-muted">Followers</span>
+          <span class="undertext">Followers</span>
         </a>
         <a class="vcard-stat" href="/stars">
           <strong class="vcard-stat-count">1</strong>
-          <span class="text-muted">Starred</span>
+          <span class="undertext">Starred</span>
         </a>
         <a class="vcard-stat" href="/jodonne91/following">
           <strong class="vcard-stat-count">0</strong>
-          <span class="text-muted">Following</span>
+          <span class="undertext">Following</span>
         </a>
       </div>
           <h3>Organizations</h3>
@@ -154,6 +146,55 @@
         </div>
 
       <div class = "center_column">
+
+
+<!-- TAB NAVIGATION -->
+        <div class = "tabnav">
+          <div class="tabnav-right">
+                <a href="/account" class="minibutton tabnav-widget">
+                  Edit profile
+                </a>
+          </div>
+          <ul class="tabnav-tabs">
+            <li data-tab="contributions">
+              <a href="/jodonne91" class="tabnav-tab ">
+                Contributions
+              </a>
+            </li>
+            <li data-tab="repo">
+              <a href="/jodonne91?tab=repositories" class="tabnav-tab selected">
+                Repositories
+              </a>
+            </li>
+            <li data-tab="activity">
+              <a href="/jodonne91?tab=activity" class="tabnav-tab ">
+                Public activity
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+<!-- REPO TOP SEARCH AND NAV ITEMS -->
+        <div class = "filter-bar">
+          <form action="/search" class="repo-search">
+            <input type="text" class="filter_input">
+            <input type="submit" value="Search" class="button">
+          </form>
+
+          <ul class="repo-filters">
+            <li><a class="repo_filter">Mirrors</a></li>
+            <li><a class="repo_filter">Forks</a></li>
+            <li><a class="repo_filter">Sources</a></li>
+            <li><a class="repo_filter">Private</a></li>
+            <li><a class="repo_filter">Public</a></li>
+            <li class="all_repos"><a class="repo_filter">All</a></li>
+          </ul>
+
+
+
+
+
 
 
 
