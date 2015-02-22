@@ -7,62 +7,151 @@
     <script src="index.js"></script>            <!-- reference to js script -->
     <link href="index.css" rel="stylesheet" />    <!-- reference to css stylesheet -->
     <script src="libs/handlebars.js"></script>
-    
+
   </head>
 
   
   <body>
-    <header class = 'header'>
+    <header>
 
-    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
-    <div class="wrapper">
-      
-      
-      
-      
+      <div class="header">
+        <div class="container clearfix">
+
+      <a class="header-logo" href="https://github.com/">
+        <span class="logo-github"></span>
+      </a>
 
 
-      <div class="header header-logged-in true" role="banner">
-  <div class="container clearfix">
-
-    <a class="header-logo-invertocat" href="https://github.com/orgs/TIY-DC-FEE-Jan-2015/dashboard" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
-  <span class="mega-octicon octicon-mark-github"></span>
-      <div class = 'githubIMG'>
-        <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"/>
+      <div class="search  js-site-search" role="search">
+          <form action="/search" class="search-form">
+            <input type="text" class="search-input" placeholder="Search GitHub">
+          </form>
       </div>
-      <div class="search">
-        <input type = "text" class = "search_bar">
+      <ul class="header-nav left">
+        <li class="header-nav-item explore">
+          <a class="header-nav-link" href="/explore">Explore</a>
+        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com">Gist</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog">Blog</a>
+          </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="https://help.github.com">Help</a>
+        </li>
+      </ul>
 
-      </div>
-      <div class="links">
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name" href="/jodonne91">
+      <img alt="John O'Donnell" class="avatar" src="https://avatars1.githubusercontent.com/u/10409303?v=3&amp;s=40" width="20">
+      <span class="css-truncate">
+        <span class="css-truncate-target">jodonne91</span>
+      </span>
+    </a>
+  </li>
 
-      </div>
-      <div class ="right_links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="#" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus"></span>
+      <span class="dropdown-caret"></span>
+    </a>
 
-      </div>
+    <div class="dropdown-menu-content js-menu-content">
+      
+<ul class="dropdown-menu">
+  <li>
+    <a href="/new" data-ga-click="Header, create new repository, icon:repo"><span class="octicon octicon-repo"></span> New repository</a>
+  </li>
+  <li>
+    <a href="/organizations/new" data-ga-click="Header, create new organization, icon:organization"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+</ul>
+
+    </div>
+  </li>
+
+  <li class="header-nav-item">
+        <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s">
+        <span class="mail-status all-read"></span>
+        <span class="octicon octicon-inbox"></span>
+</a>
+  </li>
+
+  <li class="header-nav-item">
+    <a class="header-nav-link tooltipped tooltipped-s" href="/settings/profile">
+      <span class="octicon octicon-gear"></span>
+    </a>
+  </li>
+
+  <li class="header-nav-item">
+    <form action="/logout" class="logout-form" method="post">
+      <div style="margin:0;padding:0;display:inline">
+        <input name="utf8" type="hidden" value="✓">
+        <input name="authenticity_token" type="hidden" value="vi/FDFiqLOuZvKeIMMLWdtm9IPtDAY19xPq/ozQZkJ6aH4CJexy0Pd5ZA7njgjzrdC2/PHhoyywuUXAe0UMqog=="></div>
+      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+        <span class="octicon octicon-sign-out"></span>
+      </button>
+      </form>  
+    </li>
+
+</ul>
+
+
+    
+  </div>
+</div>
+
 
     </header>
 
     <div class="main">
 
       <div class = "left_column">
+        <a href="/account" class="avatar_link"><img alt="" class="avatar" data-user="10409303" height="230" src="https://avatars3.githubusercontent.com/u/10409303?v=3&amp;s=460" width="230"></a>
 
-        <div class = "avatar">
+      <h1 class="vcard-names">
+  <span class="vcard-fullname" itemprop="name">John O'Donnell</span>
+  <span class="vcard-username" itemprop="additionalName">jodonne91</span>
+</h1>
 
-        </div>
-        <h2>
-        </h2>
-        <hr>
 
-        <div class="followers">
-        
-        </div>
 
-        <div class="organizations">
+<ul class="vcard-details">
+      
 
-        </div>
+  <li class="vcard-detail" itemprop="homeLocation"><span class="octicon octicon-location"></span>United States</li>
+  
+  <li class="vcard-detail"><span class="octicon octicon-clock">
+  </span>
+  <span class="join-label">Joined on </span>
+  <time class="join-date" datetime="2015-01-05T23:06:51Z" day="numeric" is="local-time" month="short" year="numeric">Jan 5, 2015</time></li>
+</ul>
 
+
+      <div class="vcard-stats">
+        <a class="vcard-stat" href="/jodonne91/followers">
+          <strong class="vcard-stat-count">0</strong>
+          <span class="text-muted">Followers</span>
+        </a>
+        <a class="vcard-stat" href="/stars">
+          <strong class="vcard-stat-count">1</strong>
+          <span class="text-muted">Starred</span>
+        </a>
+        <a class="vcard-stat" href="/jodonne91/following">
+          <strong class="vcard-stat-count">0</strong>
+          <span class="text-muted">Following</span>
+        </a>
       </div>
+          <h3>Organizations</h3>
+            <a href="/TIY-DC-FEE-Jan-2015" aria-label="TIY-DC-FEE-Jan-2015" class="tooltipped tooltipped-n  avatar-group-item" itemprop="follows">
+              <img alt="The Iron Yard - DC Front End Engineering, Spring 2015" class="avatar" data-user="10467000" height="42" src="https://avatars1.githubusercontent.com/u/10467000?v=3&amp;s=84" width="42">
+            </a>
+        </div>
 
       <div class = "center_column">
 
